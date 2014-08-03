@@ -30,12 +30,12 @@
 			{% endif %}
 		{% endif %} -->
 
-    	<title>{{ page.title }}</title>
+			<title>{{ page.title }}</title>
 
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-		<link href="{{ site.baseurl }}/assets/css/take37.css" rel="stylesheet">
+		<link href="{{ site.baseurl }}/assets/css/global-style_light--red.min.css" rel="stylesheet" >
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -61,60 +61,156 @@
 		<meta name="msapplication-square310x310logo" content="{{ site.baseurl }}/favicon-558x558-ie11.png"/>
 
 		<!-- <link rel="alternate" type="application/rss+xml" title="Take 37" href="{{ site.baseurl }}/take37.xml"> -->
+<style>
+h3 {
+	margin-bottom: 15px;
+}
+h4 {
+	margin-bottom: 10px;
+}
+.menu-heading {
+	margin: 3px 0;
+	color: #777;
+}
+.content {
+	margin-top: 10px;
+}
+</style>
 	</head>
-	<body>
-		<div class="wrapper">
+	<body id="top">
+	<!-- TOP HEADER / NAVIGATION BAR -->
+		<header id="header" class="header slide animated" role="banner">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8">
-						<header>
-							<a href="{{ site.baseurl }} /">Take 37 (Image goes here)</a>
-						</header>
-						<div class="content">{{ content }}</div>
-					</div><!-- .wrapper .container .row .col-md-8 -->
-
-					<div class="col-md-4">
-						<h3>About</h3>
-						<p>This is the home of our creative stuff.</p>
-						<div class="navigation-section">
-							<a href="{{ site.baseurl }}/MMK.html" title="Midnight Movie Knights with a K!">Midnight Movie Knights</a><br />
-							<a href="{{ site.baseurl }}/ChattyCatty.html">Chatty Catty</a><br />
-							<a href="{{ site.baseurl }}/credits.html">Credits</a>
-						</div>
+					<div class="navbar-header">
+						<!-- TOGGLE BUTTON for mobile -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="ai ai-menu ai-2x ai-primary"></span>
+						</button>
 						
-						<div class="host-section">
-							<h3>Who Are We?</h3>
-							<a href="{{ site.mirandahomelink }}" title="{{ site.mirandahomelabel }}">{{ site.mirandahomelabel }}</a><br />
-							<a href="{{ site.kittehhomelink }}" title="{{ site.kittehhomelabel }}">{{ site.kittehhomelabel }}</a>
-						</div>
-					</div><!-- .wrapper .container .row .col-md-4 -->
-				</div><!-- .wrapper .container .row -->
-			</div><!-- .wrapper .container -->
+						<!-- sitewide logo LINK TO ROOT INDEX (home) PAGE -->
+						<a href="{{ site.baseurl }}/index.html" class="navbar-brand">
+							<!-- sitewide LOGO HERE (as text, image, or both) -->
+							<span class="logo-top">Take 37 <!-- <span class="ai ai-droplet"></span> --><span>(add image)</span></span>
+							<!-- Hidden text in an h1 tag for SEO purposes -->
+							<h1 class="text-hide">Take 37</h1>
+						</a> <!-- end site-wide logo link -->
+					</div> <!-- end navbar-header -->
 
-			<div class="push"></div>
-		</div><!-- .wrapper -->
+					<!-- NAVIGATION -->
+					<div class="collapse navbar-collapse">
+						<nav class="navbar" role="navigation">
+							<ul class="nav navbar-nav navbar-right">
+								<!-- Home Navigation -->
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="#" aria-haspopup="true">Home</a>
+									<ul class="dropdown-menu">
+										<span class="triangle-up"></span>
+										<li><a href="{{ site.baseurl }}/index.html" data-theme="default">Home</a></li>
+										<li><a href="{{ site.baseurl }}/#">About</a></li>
+										<hr class="hr-transparent">
+										<li><a href="{{ site.mirandahomelink }}" title="{{ site.mirandahomelabel }}">{{ site.mirandahomelabel }}</a></li>
+										<li><a href="{{ site.kittehhomelink }}" title="{{ site.kittehhomelabel }}">{{ site.kittehhomelabel }}</a></li>
+									</ul>
+								</li>
+								
+								<!-- Podcasts Navigation -->
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="#" aria-haspopup="true">Podcasts</a>
+									<ul class="dropdown-menu">
+										<span class="triangle-up"></span>
+										<li><a href="{{ site.baseurl }}/#" data-theme="default">Take 37 Live Stream</a></li>
+										<li><a href="{{ site.baseurl }}/MMK.html">Midnight Movie Knights</a></li>
+										<li><a href="{{ site.baseurl }}/ChattyCatty.html">Chatty Catty</a></li>
+										<hr class="hr-transparent">
+										<li><a href="{{ site.baseurl }}/#">One Offs (Coming Soon)</a></li>
+									</ul>
+								</li>
+								
+								<!-- Comics Navigation -->
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="#" aria-haspopup="true">Comics</a>
+									<ul class="dropdown-menu">
+										<span class="triangle-up"></span>
+										<p class="text-center menu-heading">Kitteh</p>
+										<li><a href="{{ site.baseurl }}/#">Untitled Kitteh Comic</a></li>
+										<li><a href="{{ site.baseurl }}/#">Just Dave Comics</a></li>
+										<hr class="hr-transparent">
+										<p class="text-center menu-heading">Ceebs</p>
+										<li><a href="{{ site.baseurl }}/#">Duty Calls (Coming not so soon)</a></li>
+									</ul>
+								</li>
 
-		<footer>
+								<!-- Software Navigation -->
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="#" aria-haspopup="true">Software</a>
+									<ul class="dropdown-menu">
+										<span class="triangle-up"></span>
+										<li><a href="{{ site.baseurl }}/#">Take 37 iPhone App</a></li>
+										<li><a href="{{ site.baseurl }}/#">GABNet Roku App</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav> <!-- END TOP NAVIGATION -->
+					</div> <!-- end navbar wrapper -->
+				</div> <!-- end row -->
+			</div> <!-- end container -->
+		</header>
+
+		<div class="page-wrap">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<span>Take 37 - <a href="{{ site.mirandahomelink }}" title="{{ site.mirandahomelabel }}">{{ site.mirandahomelabel }}</a> &amp; <a href="{{ site.kittehhomelink }}" title="{{ site.kittehhomelabel }}">{{ site.kittehhomelabel }}</a></span>
+					<div class="col-sm-12">
+						<div class="content">{{ content }}</div>
 					</div>
 				</div>
 			</div>
-		</footer>
-		<!-- <script src="//code.jquery.com/jquery-2.1.1.min.js"></script> -->
-		<!--
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		-->
-<!-- <script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		</div>
 
-	ga('create', 'UA-48581574-1', 'take37.com');
-	ga('send', 'pageview');
-</script> -->
+		<!-- FOOTER -->
+		<footer class="site-footer footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 site-footer--col">
+						<div class="headline site-footer--heading text-center">
+							<h3>Take 37</h3>
+						</div>
+						<ul class="ai-ul">
+							<li><a href="{{ site.baseurl }}/#">About</a></li>
+							<li><a href="{{ site.baseurl }}/Credits.html">Credits</a></li>
+						</ul>
+						<h6 class="text-center menu-heading">Podcasts</h6>
+						<ul class="ai-ul">
+							<li><a href="{{ site.baseurl }}/#">Take 37 Live Stream</a></li>
+							<li><a href="{{ site.baseurl }}/MMK.html">Midnight Movie Knights</a></li>
+							<li><a href="{{ site.baseurl }}/ChattyCatty.html">Chatty Catty</a></li>
+						</ul>
+					</div> <!-- end col -->
+
+					<div class="col-md-4 site-footer--col">
+						<div class="headline site-footer--heading text-center">
+							<h3>@MirandaJanell</h3>
+						</div>
+						<p>Miranda is a software developer by day, and podcaster by night.</p>
+						<ul class="ai-ul">
+							<li><a href="{{ site.mirandatwitterlink }}" title="{{ site.mirandatwitterlabel }}"><i class="fa fa-fw fa-twitter"></i>&nbsp;{{ site.mirandatwitterlabel }}</a></li>
+						</ul>
+						<div class="clearfix"></div>
+					</div> <!-- end col -->
+
+					<div class="col-md-4 site-footer--col">
+						<div class="headline site-footer--heading text-center">
+							<h3>@ThatFrakkingCat</h3>
+						</div>
+						<p>The Cat is a mysterious beast.</p>
+						<ul class="ai-ul">
+							<li><a href="{{ site.kittehtwitterlink }}" title="{{ site.kittehtwitterlabel }}"><i class="fa fa-fw fa-twitter"></i>&nbsp;{{ site.kittehtwitterlabel }}</a></li>
+						</ul>
+						<div class="clearfix"></div>
+					</div> <!-- end col -->
+				</div> <!-- end row -->
+			</div> <!-- end container -->
+		</footer>
 	</body>
 </html>
