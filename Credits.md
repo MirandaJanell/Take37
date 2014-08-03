@@ -2,6 +2,10 @@
 layout: default
 title: Take 37 - Credits
 ---
+### Theme
+Name: [Adapto](http://gridgum.com/theme-preview/adapto-customizable-multipurpose-html/)  
+Author: [Pixel &amp; Kraft](http://pixelandkraft.com/)  
+Adapted By: [{{ site.mirandahomelink }}]({{ site.mirandahomelabel }})  
 
 ### Artwork
 Title: Logo  

@@ -7,10 +7,10 @@ baseurl: ''
 url: http://www.take37.com
 paginate: 5
 streamurl: http://stream.midnightmovieknights.com/midnight-movie-knights/mmk-64m.mp3
-mirandahomelink: https://twitter.com/MirandaJanell
-mirandahomelabel: "@MirandaJanell"
-kittehhomelink: https://twitter.com/ThatFrakkingCat
-kittehhomelabel: "@ThatFrakkingCat"
+mirandahomelink: /MirandaJanell.html
+mirandahomelabel: Miranda Janell
+kittehhomelink: /ThatFrakkingCat.html
+kittehhomelabel: That Frakking Cat
 mirandatwitterlink: https://twitter.com/MirandaJanell
 mirandatwitterlabel: "@MirandaJanell"
 kittehtwitterlink: https://twitter.com/ThatFrakkingCat
