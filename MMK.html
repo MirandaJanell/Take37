@@ -14,15 +14,25 @@ category: podcasts
 	</div>
 	<div class="col-sm-4">
 		<h4 class="text-center">Episodes</h4>
+		
+		<div class="audio-controls text-center">
+			<span class="playback-controls">
+				<a href="{{ site.baseurl }}/#"><i class="fa fa-play"></i></a>
+				<a href="{{ site.baseurl }}/#"><i class="fa fa-pause hidden"></i></a>
+			</span>&nbsp;
+			<span class="track-title">Live Stream</span>&nbsp;
+			<span class="volume-controls">
+				<i class="fa fa-volume-up"></i>
+				<i class="fa fa-volume-down"></i>
+				<i class="fa fa-volume-off"></i>
+			</span>
+		</div>
+
 		<div class="panel-group" id="episodes-accordion">
 			{% for episode in site.data.mmkEpisodes limit: 10 %}
 			<div class="panel episode-block">
 				<a class="panel-heading" data-toggle="collapse" data-parent="#episodes-accordion" href="#{{ forloop.index0 }}">
 					<h4 class="panel-title">
-						<span class="controls">
-							<i class="fa fa-play"></i>
-							<i class="fa fa-pause hidden"></i>
-						</span>&nbsp;
 						<span class="h6 episode-title">{{ episode.title }}</span>
 					</h4>
 				</a>
