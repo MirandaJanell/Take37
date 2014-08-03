@@ -14,75 +14,25 @@ category: podcasts
 	</div>
 	<div class="col-sm-4">
 		<h4 class="text-center">Episodes</h4>
-		<div class="panel-group" id="accordian1">
+		<div class="panel-group" id="episodes-accordion">
+			{% for episode in site.data.mmkEpisodes limit: 10 %}
 			<div class="panel episode-block">
-				<a class="panel-heading" data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
+				<a class="panel-heading" data-toggle="collapse" data-parent="#episodes-accordion" href="#{{ forloop.index0 }}">
 					<h4 class="panel-title">
 						<span class="controls">
 							<i class="fa fa-play"></i>
 							<i class="fa fa-pause hidden"></i>
 						</span>&nbsp;
-						<span class="h6 episode-title">031 - Maverick</span>
+						<span class="h6 episode-title">{{ episode.title }}</span>
 					</h4>
 				</a>
-				<div id="collapse1" class="panel-collapse collapse" style="height: auto;">
+				<div id="{{ forloop.index0 }}" class="panel-collapse collapse" style="height: auto;">
 					<div class="panel-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere explicabo doloribus voluptatem.</p>
+						<p>{{ episode.abstract }}</p>
 					</div>
 				</div>
 			</div>
-
-			<div class="panel episode-block">
-				<a class="panel-heading" data-toggle="collapse" data-parent="#accordion1" href="#collapse2">
-					<h4 class="panel-title">
-						<span class="controls">
-							<i class="fa fa-play"></i>
-							<i class="fa fa-pause hidden"></i>
-						</span>&nbsp;
-						<span class="h6 episode-title">030 - Flash Gordon</span>
-					</h4>
-				</a>
-				<div id="collapse2" class="panel-collapse collapse" style="height: auto;">
-					<div class="panel-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere explicabo doloribus voluptatem.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel episode-block">
-				<a class="panel-heading" data-toggle="collapse" data-parent="#accordion1" href="#collapse3">
-					<h4 class="panel-title">
-						<span class="controls">
-							<i class="fa fa-play"></i>
-							<i class="fa fa-pause hidden"></i>
-						</span>&nbsp;
-						<span class="h6 episode-title">029 - Star Trek: Into Darkness</span>
-					</h4>
-				</a>
-				<div id="collapse3" class="panel-collapse collapse" style="height: auto;">
-					<div class="panel-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere explicabo doloribus voluptatem.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel episode-block">
-				<a class="panel-heading" data-toggle="collapse" data-parent="#accordion1" href="#collapse4">
-					<h4 class="panel-title">
-						<span class="controls">
-							<i class="fa fa-play"></i>
-							<i class="fa fa-pause hidden"></i>
-						</span>&nbsp;
-						<span class="h6 episode-title">QP01 - Dallas Buyers Club</span>
-					</h4>
-				</a>
-				<div id="collapse4" class="panel-collapse collapse" style="height: auto;">
-					<div class="panel-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere explicabo doloribus voluptatem.</p>
-					</div>
-				</div>
-			</div>
-
+			{% endfor %}
 		</div>
 	</div>
 </div>
