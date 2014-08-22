@@ -1,0 +1,58 @@
+---
+layout: default
+title: Take 37 - Midnight Movie Knights
+category: show
+---
+<div class="row">
+	<div class="col-sm-8">
+		<div class="subpage-banner">
+			<a href="{{ site.mmklink }}"><img src="http://www.midnightmovieknights.com/assets/img/mmk_banner.png" alt="Midnight Movie Knights Banner" /></a>
+		</div>
+		
+		<h3>{{ site.mmklabel }}</h3>
+		<h4>With a K!</h4>
+
+		<p><a href="{{ site.mmklink }}">{{ site.mmklabel }}</a> is our first podcast.</p>
+		<p>This page is still in progress.</p>
+	</div>
+
+	<div class="col-sm-4">
+		<h4 class="text-center">Episodes</h4>
+
+		<!-- <div class="audio-controls text-center">
+			<span class="playback-controls">
+				<a href="{{ site.baseurl }}/#"><i class="fa fa-play"></i></a>
+				<a href="{{ site.baseurl }}/#"><i class="fa fa-pause hidden"></i></a>
+			</span>&nbsp;
+			<span class="track-title">Live Stream</span>&nbsp;
+			<span class="volume-controls">
+				<i class="fa fa-volume-up"></i>
+				<i class="fa fa-volume-down"></i>
+				<i class="fa fa-volume-off"></i>
+			</span>
+		</div> -->
+
+		<div class="panel-group" id="episodes-accordion">
+			{% for episode in site.data.mmkEpisodes limit: 10 %}
+			<div class="panel panel-default episode-block">
+			
+				<a class="panel-heading" data-toggle="collapse" data-parent="#episodes-accordion" href="#collapse{{ forloop.index0 }}">
+					<h4 class="panel-title">
+						<span class="h6 episode-title">{{ episode.title }}</span>
+					</h4>
+				</a>
+				<div id="collapse{{ forloop.index0 }}" class="panel-collapse collapse{% if forloop.index0 == 0 %} in{% endif %}" style="height: auto;">
+					<div class="panel-body">
+						<p>{{ episode.abstract }}</p>
+					</div>
+					<div class="panel-links text-center">
+						<a href="{{ site.baseurl }}/#" title="Play Episode"><i class="fa fa-fw fa-play"></i></a>
+						<a href="{{ site.baseurl }}/#" title="Download Episode"><i class="fa fa-fw fa-cloud-download"></i></a>
+						<a href="{{ site.baseurl }}/#">Show Notes</a>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

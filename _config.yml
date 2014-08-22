@@ -1,6 +1,6 @@
 name: Take 37
 description: The Creative Efforts of @MirandaJanell and @ThatFrakkingCat
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 timezone: America/Los_Angeles
 baseurl: ''

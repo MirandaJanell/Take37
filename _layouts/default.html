@@ -7,35 +7,35 @@
 		<meta name="author" content="@MirandaJanell &amp; @ThatFrakkingCat">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<!-- <meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@MovieKnightsPod">
-		<meta name="twitter:creator" content="@MovieKnightsPod">
+		<meta name="twitter:card" content="summary">
+		<!-- <meta name="twitter:site" content="@MovieKnightsPod"> -->
+		<meta name="twitter:creator" content="@MirandaJanell">
 		{% if page.categories contains 'podcast' %}
-		<meta name="twitter:title" content="{{ page.title }}">
+		<meta property="og:title" content="{{ page.title }}">
 			{% if page.abstract %}
-			<meta name="twitter:description" content="{{ page.abstract }}">
+			<meta property="og:description" content="{{ page.abstract }}">
 			{% else %}
-			<meta name="twitter:description" content="{{ page.content }}">
+			<meta property="og:description" content="{{ page.content }}">
 			{% endif %}
 		{% else %}
 			{% if page.title %}
-		<meta name="twitter:title" content="{{ page.title }}">
+		<meta property="og:title" content="{{ page.title }}">
 			{% else %}
-		<meta name="twitter:title" content="{{ site.name }}">
+		<meta property="og:title" content="{{ site.name }}">
 			{% endif %}
 			{% if page.description %}
-		<meta name="twitter:description" content="{{ page.description }}">
+		<meta property="og:description" content="{{ page.description }}">
 			{% else %}
-		<meta name="twitter:description" content="{{ site.description }}">
+		<meta property="og:description" content="{{ site.description }}">
 			{% endif %}
-		{% endif %} -->
+		{% endif %}
 
 			<title>{{ page.title }}</title>
 
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-		<link href="{{ site.baseurl }}/assets/css/global-style_light--red.min.css" rel="stylesheet" >
+		<link href="{{ site.baseurl }}/assets/css/global-style_light--red.css" rel="stylesheet" >
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -43,46 +43,32 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
+		<link href="{{ site.baseurl }}/assets/css/take37.css" rel="stylesheet" >
+		{% if page.stylesheet %}<link href="{{ site.baseurl }}/assets/css/{{ page.stylesheet }}" rel="stylesheet" >{% endif %}
+
 		<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" >
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.baseurl }}/favicon-152x152.png">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/favicon-144x144.png">
-		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.baseurl }}/favicon-120x120.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/favicon-114x114.png">
-		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.baseurl }}/favicon-76x76.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/favicon-72x72.png">
-		<link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/favicon-57x57.png">
-		<link rel="shortcut icon" sizes="196x196" href="{{ site.baseurl }}/favicon-196x196.png">
+
+		<!-- iOS icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-152x152.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-144x144.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-120x120.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-114x114.png">
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-76x76.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-72x72.png">
+		<link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-57x57.png">
+
+		<!-- Android icon -->
+		<link rel="shortcut icon" sizes="196x196" href="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-196x196.png">
 		
+		<!-- Internet Explorer icons -->
 		<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="{{ site.baseurl }}/favicon-144x144-ie10.png">
-		<meta name="msapplication-square70x70logo" content="{{ site.baseurl }}/favicon-128x128-ie11.png"/>
-		<meta name="msapplication-square150x150logo" content="{{ site.baseurl }}/favicon-270x270-ie11.png"/>
-		<meta name="msapplication-wide310x150logo" content="{{ site.baseurl }}/favicon-558x270-ie11.png"/>
-		<meta name="msapplication-square310x310logo" content="{{ site.baseurl }}/favicon-558x558-ie11.png"/>
+		<meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-144x144.png">
+		<meta name="msapplication-square70x70logo" content="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-70x70.png"/>
+		<meta name="msapplication-square150x150logo" content="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-150x150.png"/>
+		<meta name="msapplication-wide310x150logo" content="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-310x150.png"/>
+		<meta name="msapplication-square310x310logo" content="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-310x310.png"/>
 
 		<!-- <link rel="alternate" type="application/rss+xml" title="Take 37" href="{{ site.baseurl }}/take37.xml"> -->
-<style>
-h3 {
-	margin-bottom: 15px;
-}
-h4 {
-	margin-bottom: 10px;
-}
-img {
-	max-width: 100%;
-	height: auto;
-}
-.menu-heading {
-	margin: 3px 0;
-	color: #777;
-}
-.content {
-	margin-top: 10px;
-}
-.panel-title .controls {
-	color: #333;
-}
-</style>
 	</head>
 	<body id="top">
 	<!-- TOP HEADER / NAVIGATION BAR -->
@@ -99,7 +85,7 @@ img {
 						<!-- sitewide logo LINK TO ROOT INDEX (home) PAGE -->
 						<a href="{{ site.baseurl }}/index.html" class="navbar-brand">
 							<!-- sitewide LOGO HERE (as text, image, or both) -->
-							<span class="logo-top">Take 37 <!-- <span class="ai ai-droplet"></span> --><span>(add image)</span></span>
+							<span class="logo-top">Take 37 <img src="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-64x64.png" width="64" height="64" /></span>
 							<!-- Hidden text in an h1 tag for SEO purposes -->
 							<h1 class="text-hide">Take 37</h1>
 						</a> <!-- end site-wide logo link -->
@@ -128,7 +114,7 @@ img {
 									<ul class="dropdown-menu">
 										<span class="triangle-up"></span>
 										<li><a href="{{ site.baseurl }}/#" data-theme="default">Take 37 Live Stream</a></li>
-										<li><a href="{{ site.baseurl }}/MMK.html">Midnight Movie Knights</a></li>
+										<li><a href="{{ site.baseurl }}/mmk/index.html">Midnight Movie Knights</a></li>
 										<li><a href="{{ site.baseurl }}/ChattyCatty.html">Chatty Catty</a></li>
 										<hr class="hr-transparent">
 										<li><a href="{{ site.baseurl }}/#">One Offs (Coming Soon)</a></li>
