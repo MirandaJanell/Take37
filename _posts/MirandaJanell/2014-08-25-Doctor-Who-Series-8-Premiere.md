@@ -4,6 +4,8 @@ title: "Doctor Who: Series 8 Premier"
 category: MirandaJanell
 tags: [ "Doctor Who" ]
 ---
+This is currently in outline form, to get my thoughts down.
+
 #### Things I loved
 
 * The Doctor referring to Clara as Handles and mentioning that she's let herself go.
