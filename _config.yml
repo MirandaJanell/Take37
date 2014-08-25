@@ -6,6 +6,7 @@ timezone: America/Los_Angeles
 baseurl: ''
 url: http://www.take37.com
 paginate: 5
+permalink: "/:categories/:year/:month/:title.html"
 streamurl: http://stream.midnightmovieknights.com/midnight-movie-knights/mmk-64m.mp3
 mirandahomelink: /MirandaJanell.html
 mirandahomelabel: Miranda Janell
