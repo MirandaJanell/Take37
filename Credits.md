@@ -1,15 +1,11 @@
 ---
 layout: default
 title: Take 37 - Credits
----
-### Theme
-Name: [Adapto](http://gridgum.com/theme-preview/adapto-customizable-multipurpose-html/)  
-Author: [Pixel &amp; Kraft](http://pixelandkraft.com/)  
-Adapted By: [{{ site.mirandahomelink }}]({{ site.mirandahomelabel }})  
+---  
 
 ### Artwork
 Title: Logo  
-Artist: [{{ site.kittehhomelink }}]({{ site.kittehhomelabel }})  
+Artist: [@ThatFrakkingCat](https://twitter.com/ThatFrakkingCat)  
 
 ### Articles
 [Podcasting with Jekyll](http://www.adamwilcox.org/2013/01/17/from-the-pub/)  

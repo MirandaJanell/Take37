@@ -2,10 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="{{ site.description }}">
 		<meta name="author" content="@MirandaJanell &amp; @ThatFrakkingCat">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 		<meta name="twitter:card" content="summary">
 		<!-- <meta name="twitter:site" content="@MovieKnightsPod"> -->
@@ -32,10 +32,9 @@
 
 			<title>Take 37 - {{ page.title }}</title>
 
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-		<link href="{{ site.baseurl }}/assets/css/global-style_light--red.css" rel="stylesheet" >
+		<link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="{{ site.baseurl }}/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="{{ site.baseurl }}/assets/css/font-awesome.min.css" rel="stylesheet">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -70,148 +69,42 @@
 
 		<!-- <link rel="alternate" type="application/rss+xml" title="Take 37" href="{{ site.baseurl }}/take37.xml"> -->
 	</head>
+
 	<body id="top">
-	<!-- TOP HEADER / NAVIGATION BAR -->
-		<header id="header" class="header slide animated" role="banner">
+		<nav class="navbar navbar-inverse">
 			<div class="container">
-				<div class="row">
-					<div class="navbar-header">
-						<!-- TOGGLE BUTTON for mobile -->
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="ai ai-menu ai-2x ai-primary"></span>
-						</button>
-						
-						<!-- sitewide logo LINK TO ROOT INDEX (home) PAGE -->
-						<a href="{{ site.baseurl }}/index.html" class="navbar-brand">
-							<!-- sitewide LOGO HERE (as text, image, or both) -->
-							<span class="logo-top"><img src="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-64x64.png" width="64" height="64" alt="Take 37" /></span>
-							<!-- Hidden text in an h1 tag for SEO purposes -->
-							<h1 class="text-hide">Take 37</h1>
-						</a> <!-- end site-wide logo link -->
-					</div> <!-- end navbar-header -->
-
-					<!-- NAVIGATION -->
-					<div class="collapse navbar-collapse">
-						<nav class="navbar" role="navigation">
-							<ul class="nav navbar-nav navbar-right">
-								<!-- Home Navigation -->
-								<li class="dropdown">
-									<a class="dropdown-toggle" href="#" aria-haspopup="true">Home</a>
-									<ul class="dropdown-menu">
-										<span class="triangle-up"></span>
-										<li><a href="{{ site.baseurl }}/index.html" data-theme="default">Home</a></li>
-										<li><a href="{{ site.baseurl }}/#">About</a></li>
-										<hr class="hr-transparent">
-										<li><a href="{{ site.mirandahomelink }}" title="{{ site.mirandahomelabel }}">{{ site.mirandahomelabel }}</a></li>
-										<li><a href="{{ site.kittehhomelink }}" title="{{ site.kittehhomelabel }}">{{ site.kittehhomelabel }}</a></li>
-									</ul>
-								</li>
-								
-								<!-- Podcasts Navigation -->
-								<li class="dropdown">
-									<a class="dropdown-toggle" href="#" aria-haspopup="true">Podcasts</a>
-									<ul class="dropdown-menu">
-										<span class="triangle-up"></span>
-										<li><a href="{{ site.baseurl }}/#" data-theme="default">Take 37 Live Stream</a></li>
-										<li><a href="{{ site.baseurl }}/mmk/index.html">Midnight Movie Knights</a></li>
-										<li><a href="{{ site.baseurl }}/ChattyCatty.html">Chatty Catty</a></li>
-										<hr class="hr-transparent">
-										<li><a href="{{ site.baseurl }}/#">One Offs (Coming Soon)</a></li>
-									</ul>
-								</li>
-								
-								<!-- Comics Navigation -->
-								<li class="dropdown">
-									<a class="dropdown-toggle" href="#" aria-haspopup="true">Comics</a>
-									<ul class="dropdown-menu">
-										<span class="triangle-up"></span>
-										<p class="text-center menu-heading">Kitteh</p>
-										<li><a href="{{ site.baseurl }}/#">Untitled Kitteh Comic</a></li>
-										<li><a href="{{ site.baseurl }}/#">Just Dave Comics</a></li>
-										<hr class="hr-transparent">
-										<p class="text-center menu-heading">Ceebs</p>
-										<li><a href="{{ site.baseurl }}/#">Duty Calls (Coming not so soon)</a></li>
-									</ul>
-								</li>
-
-								<!-- Software Navigation -->
-								<li class="dropdown">
-									<a class="dropdown-toggle" href="#" aria-haspopup="true">Software</a>
-									<ul class="dropdown-menu">
-										<span class="triangle-up"></span>
-										<li><a href="{{ site.baseurl }}/#">Take 37 iPhone App</a></li>
-										<li><a href="{{ site.baseurl }}/#">GABNet Roku App</a></li>
-									</ul>
-								</li>
-							</ul>
-						</nav> <!-- END TOP NAVIGATION -->
-					</div> <!-- end navbar wrapper -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</header>
-
-		<div class="page-wrap">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="content">{{ content }}</div>
-					</div>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-48x48.png"></a>
 				</div>
+				
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#shows">Shows</a></li>
+						<li><a href="#comics">Comics</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
 			</div>
+		</nav>
+
+		<div class="container site-content">
+			{{ content }}
 		</div>
 
-		<!-- FOOTER -->
-		<footer class="site-footer footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 site-footer--col">
-						<div class="headline site-footer--heading text-center">
-							<h3>Take 37</h3>
-						</div>
-						<ul class="ai-ul">
-							<li><a href="{{ site.baseurl }}/#">About</a></li>
-							<li><a href="{{ site.baseurl }}/Credits.html">Credits</a></li>
-						</ul>
-						<h6 class="text-center menu-heading">Podcasts</h6>
-						<ul class="ai-ul">
-							<li><a href="{{ site.baseurl }}/#">Take 37 Live Stream</a></li>
-							<li><a href="{{ site.baseurl }}/MMK.html">Midnight Movie Knights</a></li>
-							<li><a href="{{ site.baseurl }}/ChattyCatty.html">Chatty Catty</a></li>
-						</ul>
-					</div> <!-- end col -->
-
-					<div class="col-md-4 site-footer--col">
-						<div class="headline site-footer--heading text-center">
-							<h3>{{ site.mirandahomelabel }}</h3>
-						</div>
-						<p>Miranda is a software developer by day, and podcaster by night.</p>
-						<ul class="ai-ul">
-							<li><a href="{{ site.mirandatwitterlink }}" title="{{ site.mirandatwitterlabel }}"><i class="fa fa-fw fa-twitter"></i>&nbsp;{{ site.mirandatwitterlabel }}</a></li>
-						</ul>
-						<div class="clearfix"></div>
-					</div> <!-- end col -->
-
-					<div class="col-md-4 site-footer--col">
-						<div class="headline site-footer--heading text-center">
-							<h3>{{ site.kittehhomelabel }}</h3>
-						</div>
-						<p>The Cat is a mysterious beast.</p>
-						<ul class="ai-ul">
-							<li><a href="{{ site.kittehtwitterlink }}" title="{{ site.kittehtwitterlabel }}"><i class="fa fa-fw fa-twitter"></i>&nbsp;{{ site.kittehtwitterlabel }}</a></li>
-						</ul>
-						<div class="clearfix"></div>
-					</div> <!-- end col -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</footer>
 		<!-- SCRIPTS -->
 		<!-- jQuery first -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/jquery-2.1.4.min.js"></script>
 
 		<!-- Global Scripts -->
-
-		<script src="{{ site.baseurl }}/assets/js/global-adapto.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/global-bootstrap.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 	</body>
 </html>

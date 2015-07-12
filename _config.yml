@@ -1,23 +1,12 @@
 name: Take 37
-description: The Creative Efforts of @MirandaJanell and @ThatFrakkingCat
+description: The creative efforts of @MirandaJanell and @ThatFrakkingCat
 markdown: kramdown
 highlighter: pygments
 timezone: America/Los_Angeles
 baseurl: ''
 url: http://www.take37.com
-paginate: 5
+paginate: 10
 permalink: "/:categories/:year/:month/:title.html"
-streamurl: http://stream.midnightmovieknights.com/midnight-movie-knights/mmk-64m.mp3
-mirandahomelink: /MirandaJanell.html
-mirandahomelabel: Miranda Janell
-kittehhomelink: /ThatFrakkingCat.html
-kittehhomelabel: That Frakking Cat
-mirandatwitterlink: https://twitter.com/MirandaJanell
-mirandatwitterlabel: "@MirandaJanell"
-kittehtwitterlink: https://twitter.com/ThatFrakkingCat
-kittehtwitterlabel: "@ThatFrakkingCat"
-mmklink: http://www.midnightmovieknights.com/
-mmklabel: Midnight Movie Knights
 gems:
 - jekyll-sitemap
 - jekyll-redirect-from
