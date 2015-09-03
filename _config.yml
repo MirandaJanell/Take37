@@ -6,8 +6,19 @@ timezone: America/Los_Angeles
 baseurl: ''
 url: http://www.take37.com
 paginate: 10
-permalink: "/:categories/:year/:month/:title.html"
+permalink: "/:categories/:title.html"
 soundcloudrss: http://feeds.soundcloud.com/users/soundcloud:users:160223565/sounds.rss
 gems:
 - jekyll-sitemap
 - jekyll-redirect-from
+defaults:
+-
+  scope:
+    path: "getting-geeky"
+    type: "posts"
+  values:
+    layout:   post
+    category: getting-geeky
+    tags:
+    - getting-geeky
+    - podcast
