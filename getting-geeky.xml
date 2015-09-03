@@ -23,7 +23,7 @@ layout: null
 	<itunes:category text="Society &amp; Culture" />
 	<itunes:explicit>Yes</itunes:explicit>
 	<itunes:new-feed-url>http://www.take37.com/getting-geeky.xml</itunes:new-feed-url>
-{% for post in site.categories.gettinggeeky limit:10 %}
+{% for post in site.categories.getting-geeky limit:10 %}
 	{% assign episodeurl = post.link | replace: 'http://', 'http://www.podtrac.com/pts/redirect.mp3/' %}
 	<item>
 		<title>{{ post.title | xml_escape }}</title>
