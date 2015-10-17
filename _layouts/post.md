@@ -7,7 +7,7 @@ layout: default
 
 	<div class="post-content">{{ content }}</div>
 
-	<div class="post-meta">
+	<!-- <div class="post-meta">
 	{% if page.categories %}
 		<h4>Categories</h4>
 		<ul>
@@ -25,5 +25,5 @@ layout: default
 		{% endfor %}
 		</ul>
 	{% endif %}
-	</div>
+	</div> -->
 </div>
