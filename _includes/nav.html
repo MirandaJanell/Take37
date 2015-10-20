@@ -6,15 +6,20 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="#"><img src="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-64x64.png" alt="Take37 Clapper"></a>
+		<a class="navbar-brand" href="/index.html"><img src="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-64x64.png" alt="Take37 Clapper"></a>
 	</div>
 	
 	<div id="navbar" class="collapse navbar-collapse">
 		<ul class="nav navbar-nav navbar-right">
 			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#shows">Shows</a></li>
-			<li><a href="#comics">Comics</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Shows</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Comics</a>
+				<ul class="dropdown-menu">
+					<li><a href="{{ site.baseurl}}/wtf-dave/index.html">WTF Dave!?</a></li>
+				</ul>
+			</li>
 		</ul>
 	</div><!--/.nav-collapse -->
 </div>
