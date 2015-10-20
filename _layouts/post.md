@@ -2,8 +2,8 @@
 layout: default
 ---
 <div class="post-container">
-	<h3 class="post-title">{{ page.title }}</h3>
-	{% if page.subtitle %}<h4 class="post-title">{{ page.subtitle }}</h4>{% endif %}
+	<h2 class="post-title">{{ page.title }}</h2>
+	{% if page.subtitle %}<h3 class="post-title">{{ page.subtitle }}</h3>{% endif %}
 
 	<div class="post-content">{{ content }}</div>
 

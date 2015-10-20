@@ -1,7 +1,13 @@
 ---
-layout: default
+layout:     default
+navinclude: ggnav.html
 ---
 {% capture pagetitle %}{{ page.date | date: "%B %d, %Y" }}{% endcapture %}
+<div class="alert alert-info alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Disclaimer</strong> I don't have a page template for this yet, but I figure something is better than nothing.
+</div>
+
 <div class="post-container">
 	<h2>Getting Geeky</h2>
 	{% if pagetitle %}<h3 class="post-title">{{ pagetitle }}</h3>{% endif %}
