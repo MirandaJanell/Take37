@@ -25,7 +25,7 @@
 {% if page.tags contains 'podcast' %}
 	{% assign ogtitle = page.title %}
 	{% assign ogtype = 'article' %}
-	{% assign ogdesc = page.excerpt %}
+	{% assign ogdesc = page.excerpt | strip_html | strip_newlines %}
 {% endif %}
 
 {% if page.abstract %}
