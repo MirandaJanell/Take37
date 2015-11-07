@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<h1 class="text-center">{{ page.comicname }}</h1>
 <div class="post-container">
-	<img src="{{ site.baseurl }}/assets/img/wtfdave/{{ page.image }}" alt="{{ page.title }}" width="{{ imagewidth }}" height="{{ imageheight }}" />
+	<h2 class="text-center">{{ page.title }}</h2>
+	<img src="{{ page.image }}" alt="{{ page.title }}" width="{{ page.imagewidth }}" height="{{ page.imageheight }}" class="img-responsive center-block" />
 </div>

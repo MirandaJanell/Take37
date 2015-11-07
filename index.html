@@ -2,5 +2,28 @@
 layout: default
 title: Take 37 - Home
 ---
-<h1 class="text-center">Take37 really is coming soon this time</h1>
-<img src="{{ site.baseurl }}/assets/img/BLAH.png" class="img-responsive center-block" alt="Dave doesn't believe us. Blah blah blah." />
+<h1 class="text-center">Take 37 <small>A work in progress</small></h1>
+
+<div class="row">
+	<div class="col-md-4 text-center">
+		<h2>Comics</h2>
+		<h3>WTF Dave!?!</h3>
+		{% for post in site.categories.wtf-dave %}
+			<div>
+				<a href="{{ site.baseurl }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
+				<a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.thumbnail }}" alt="{{ post.title }}" width="{{ post.thumbwidth }}" height="{{ post.thumbheight }}" class="img-responsive center-block" /></a>
+			</div>
+		{% endfor %}
+	</div>
+	<div class="col-md-4 text-center">
+		<h2>Podcasts</h2>
+		<h3><a href="http://www.midnightmovieknights.com/">Midnight Movie Knights</a></h3>
+		<h3>Suds Sunday</h3>
+		<h3>Getting Geeky</h3>
+	</div>
+	<div class="col-md-4 text-center">
+		<h2>More</h2>
+		<h3>Coming Soon</h3>
+		<img src="{{ site.baseurl }}/assets/img/BLAH.png" class="img-responsive center-block" alt="Dave doesn't believe us. Blah blah blah." />
+	</div>
+</div>

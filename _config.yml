@@ -13,13 +13,26 @@ gems:
 - jekyll-sitemap
 - jekyll-redirect-from
 defaults:
--
-  scope:
-    path: "getting-geeky"
-    type: "posts"
-  values:
-    layout:   post
-    category: getting-geeky
-    tags:
-    - getting-geeky
-    - podcast
+  -
+    scope:
+      path: "getting-geeky"
+      type: "posts"
+    values:
+      layout:   post
+      category: getting-geeky
+      tags:
+        - getting-geeky
+        - podcast
+  -
+    scope:
+      path: "wtf-dave"
+      type: "posts"
+    values:
+      layout:   comic
+      category: wtf-dave
+      comicname: "WTF Dave!?!"
+      tags:
+        - WTF-Dave
+        - Dave
+        - Comic
+        - Original

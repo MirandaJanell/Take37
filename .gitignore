@@ -2,3 +2,5 @@
 *.sublime-workspace
 _site
 mm.log
+
+*.lock
