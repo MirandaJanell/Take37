@@ -109,13 +109,11 @@
 	</head>
 
 	<body id="top">
-		<nav class="navbar">
-		{% if page.navinclude %}
-			{% include {{ page.navinclude }} %}
-		{% else %}
-			{% include nav.html %}
-		{% endif %}
-		</nav>
+	{% if page.navinclude %}
+		{% include {{ page.navinclude }} %}
+	{% else %}
+		{% include nav.html %}
+	{% endif %}
 
 		<div class="container site-content">
 			{{ content }}
