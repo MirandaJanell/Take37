@@ -19,7 +19,10 @@ title: Take 37 - Home
 		<h2>Podcasts</h2>
 		<h3><a href="http://www.midnightmovieknights.com/">Midnight Movie Knights</a></h3>
 		<h3>Suds Sunday</h3>
-		<h3>Getting Geeky</h3>
+		<h3><a href="{{ site.baseurl }}/getting-geeky/index.html">Getting Geeky</a></h3>
+		<ul class="list-group text-left">{% for post in site.categories.getting-geeky limit: 5 %}
+			<li class="list-group-item"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%B %-d, %Y" }} - {{ post.title }}</a></li>
+		{% endfor %}</ul>
 	</div>
 	<div class="col-md-4 text-center">
 		<h2>More</h2>
