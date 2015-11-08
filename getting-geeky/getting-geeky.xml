@@ -43,7 +43,7 @@ layout: null
 		<content:encoded><![CDATA[
 		Brought to you by <a href="https://twitter.com/GettingGeekyMJ">@GettingGeekyMJ</a><br />
 		<p>{{ post.content }}</p>
-		<p>If you'd like to interact with the show, you can, send a tweet to <a href="https://twitter.com/GettingGeekyMJ">@GettingGeekyMJ</a>, visit the <a href="https://www.facebook.com/GettingGeeky">Facebook page</a>, or join the lives shows on the <a href="http://mixlr.com/take37>Take 37 Mixlr page</a>.</p>
+		<p>If you'd like to interact with the show, you can, send a tweet to <a href="https://twitter.com/GettingGeekyMJ">@GettingGeekyMJ</a>, visit the <a href="https://www.facebook.com/GettingGeeky">Facebook page</a>, or join the lives shows on the <a href="http://mixlr.com/take37">Take 37 Mixlr page</a>.</p>
 		<p>Thanks to <a href="https://twitter.com/ThatFrakkingCat">@ThatFrakkingCat</a> for the album art, <a href="https://twitter.com/RevelstokeJim">@RevelstokeJim</a>, <a href="https://twitter.com/markoshark">@markoshark</a>, <a href="https://twitter.com/Tessek1138">@Tessek1138</a>, and <a href="https://twitter.com/AvailableInADHD">@AvailableInADHD</a> for being such fantastic regular contributors.</p>
 		]]></content:encoded>
 	</item>
