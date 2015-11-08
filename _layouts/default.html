@@ -106,6 +106,7 @@
 		<meta name="msapplication-square310x310logo" content="{{ site.baseurl }}/assets/img/clapper/Take37Clapper-310x310.png"/>
 
 		<!-- <link rel="alternate" type="application/rss+xml" title="Take 37" href="{{ site.baseurl }}/take37.xml"> -->
+		{% if page.feedurl %}<link rel="alternate" type="application/rss+xml" title="{{ page.feedtitle }}" href="{{ site.baseurl }}{{ page.feedurl }}">{% endif %}
 	</head>
 
 	<body id="top">

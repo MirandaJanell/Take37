@@ -18,11 +18,22 @@ defaults:
       path: "getting-geeky"
       type: "posts"
     values:
-      layout:   post
+      layout:   getting-geeky
       category: getting-geeky
+      ogimage:  http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
       tags:
         - getting-geeky
         - podcast
+        - MirandaJanell
+  -
+    scope:
+      path: "getting-geeky-gabnet"
+      type: "posts"
+    values:
+      layout:   getting-geeky-gabnet
+      category: getting-geeky-gabnet
+      tags:
+        - archive
   -
     scope:
       path: "wtf-dave"
