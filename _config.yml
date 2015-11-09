@@ -18,11 +18,14 @@ defaults:
     path: "mmk"
     type: "posts"
   values:
-    layout:    mmk
-    category:  mmk
-    ogimage:   http://media.take37.com/mmk/mmk-cover-art.jpg
-    feedurl:   http://www.midnightmovieknights.com/mmk.xml
-    feedtitle: Midnight Movie Knights
+    layout:      mmk
+    category:    mmk
+    ogimage:     http://media.take37.com/mmk/mmk-cover-art.jpg
+    twitteracct: "@MovieKnightsPod"
+    fbpage:      MidnightMovieKnights
+    fbappid:     514828295332812
+    feedurl:     http://www.midnightmovieknights.com/mmk.xml
+    feedtitle:   Midnight Movie Knights
     tags:
       - mmk
       - podcast
@@ -33,19 +36,24 @@ defaults:
     path: "mmk"
     type: "pages"
   values:
-    ogimage:   http://media.take37.com/mmk/mmk-cover-art.jpg
-    feedurl:   http://www.midnightmovieknights.com/mmk.xml
-    feedtitle: Midnight Movie Knights
+    ogimage:     http://media.take37.com/mmk/mmk-cover-art.jpg
+    twitteracct: "@MovieKnightsPod"
+    fbpage:      MidnightMovieKnights
+    fbappid:     514828295332812
+    feedurl:     http://www.midnightmovieknights.com/mmk.xml
+    feedtitle:   Midnight Movie Knights
 -
   scope:
     path: "getting-geeky"
     type: "posts"
   values:
-    layout:    getting-geeky
-    category:  getting-geeky
-    ogimage:   http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
-    feedurl:   http://www.take37.com/getting-geeky/getting-geeky.xml
-    feedtitle: Getting Geeky
+    layout:      getting-geeky
+    category:    getting-geeky
+    ogimage:     http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
+    twitteracct: "@GettingGeekyMJ"
+    fbpage:      GettingGeeky
+    feedurl:     http://www.take37.com/getting-geeky/getting-geeky.xml
+    feedtitle:   Getting Geeky
     tags:
       - getting-geeky
       - podcast
@@ -55,19 +63,21 @@ defaults:
     path: "getting-geeky"
     type: "pages"
   values:
-    ogimage:   http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
-    feedurl:   http://www.take37.com/getting-geeky/getting-geeky.xml
-    feedtitle: Getting Geeky
+    ogimage:     http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
+    twitteracct: "@GettingGeekyMJ"
+    fbpage:      GettingGeeky
+    feedurl:     http://www.take37.com/getting-geeky/getting-geeky.xml
+    feedtitle:   Getting Geeky
 -
   scope:
     path: "suds-sunday"
     type: "posts"
   values:
-    layout:    suds-sunday
-    category:  suds-sunday
-    ogimage:   http://media.take37.com/suds-sunday/SudsSunday-1400x1400.png
-    feedurl:   http://www.take37.com/suds-sunday/suds-sunday.xml
-    feedtitle: Suds Sunday
+    layout:      suds-sunday
+    category:    suds-sunday
+    ogimage:     http://media.take37.com/suds-sunday/SudsSunday-1400x1400.png
+    feedurl:     http://www.take37.com/suds-sunday/suds-sunday.xml
+    feedtitle:   Suds Sunday
     tags:
       - suds-sunday
       - podcast
@@ -88,6 +98,11 @@ defaults:
   values:
     layout:   getting-geeky-gabnet
     category: getting-geeky-gabnet
+    ogimage:     http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
+    twitteracct: "@GettingGeekyMJ"
+    fbpage:      GettingGeeky
+    feedurl:     http://www.take37.com/getting-geeky/getting-geeky.xml
+    feedtitle:   Getting Geeky
     tags:
       - archive
 -

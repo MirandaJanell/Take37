@@ -1,7 +1,14 @@
 ---
 layout:      default
+ogimage:     http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
 twitteracct: "@GettingGeekyMJ"
 fbpage:      GettingGeeky
+feedurl:     http://www.take37.com/getting-geeky/getting-geeky.xml
+feedtitle:   Getting Geeky
+tags:
+- getting-geeky
+- podcast
+- MirandaJanell
 ---
 {% capture pagetitle %}{{ page.date | date: "%B %d, %Y" }}{% endcapture %}
 {% assign episodeurl = page.link | replace: 'http://', 'http://www.podtrac.com/pts/redirect.m4a/' %}
