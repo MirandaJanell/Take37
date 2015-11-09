@@ -5,28 +5,45 @@ title: Take 37 - Home
 <h1 class="text-center">Take 37 <small>A work in progress</small></h1>
 
 <div class="row">
-	<div class="col-md-4 text-center">
-		<h2>Comics</h2>
-		<h3>WTF Dave!?!</h3>
+	<div class="col-md-12">
+		<h2 class="text-center">Podcasts</h2>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<a href="http://www.midnightmovieknights.com/">
+			<img src="http://media.take37.com/mmk/mmk-cover-art-360x360.png" width="360" height="360" class="img-responsive center-block" alt="Midnight Movie Knights" />
+		</a>
+		<a href="http://www.midnightmovieknights.com/"><h3 class="text-center">Midnight Movie Knights</h3></a>
+	</div>
+	<div class="col-md-4">
+		<a href="{{ site.baseurl }}/suds-sunday/index.html">
+			<img src="http://media.take37.com/suds-sunday/SudsSunday-360x360.png" width="360" height="360" class="img-responsive center-block" alt="Suds Sunday" />
+		</a>
+		<a href="{{ site.baseurl }}/suds-sunday/index.html"><h3 class="text-center">Suds Sunday<br /><small>Coming Soon</small></h3></a>
+	</div>
+	<div class="col-md-4">
+		<a href="{{ site.baseurl }}/getting-geeky/index.html">
+			<img src="http://media.take37.com/getting-geeky/GettingGeeky-360x360.png" width="360" height="360" class="img-responsive center-block" alt="Getting Geeky" />
+		</a>
+		<a href="{{ site.baseurl }}/getting-geeky/index.html"><h3 class="text-center">Getting Geeky</h3></a>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		<h2 class="text-center">Comics</h2>
+		<h3 class="text-center">WTF Dave!?!</h3>
 		{% for post in site.categories.wtf-dave %}
 			<div>
-				<a href="{{ site.baseurl }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
 				<a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.thumbnail }}" alt="{{ post.title }}" width="{{ post.thumbwidth }}" height="{{ post.thumbheight }}" class="img-responsive center-block" /></a>
+				<a href="{{ site.baseurl }}{{ post.url }}"><h4 class="text-center">{{ post.title }}</h4></a>
 			</div>
 		{% endfor %}
 	</div>
-	<div class="col-md-4 text-center">
-		<h2>Podcasts</h2>
-		<h3><a href="http://www.midnightmovieknights.com/">Midnight Movie Knights</a></h3>
-		<h3>Suds Sunday</h3>
-		<h3><a href="{{ site.baseurl }}/getting-geeky/index.html">Getting Geeky</a></h3>
-		<ul class="list-group text-left">{% for post in site.categories.getting-geeky limit: 5 %}
-			<li class="list-group-item"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%B %-d, %Y" }} - {{ post.title }}</a></li>
-		{% endfor %}</ul>
-	</div>
-	<div class="col-md-4 text-center">
-		<h2>More</h2>
-		<h3>Coming Soon</h3>
-		<img src="{{ site.baseurl }}/assets/img/BLAH.png" class="img-responsive center-block" alt="Dave doesn't believe us. Blah blah blah." />
+	<div class="col-md-6">
+		<h2 class="text-center">More<br /><small>Coming Soon</small></h2>
+		<img src="{{ site.baseurl }}/assets/img/BLAH.png" class="img-responsive" alt="Dave doesn't believe us. Blah blah blah." />
 	</div>
 </div>
