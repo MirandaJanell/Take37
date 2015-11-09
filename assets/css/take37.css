@@ -5,3 +5,6 @@
 .navbar-toggle .icon-bar {
 	background-color: #d9230f;
 }
+h1:first-child {
+	margin-top: 0px;
+}
