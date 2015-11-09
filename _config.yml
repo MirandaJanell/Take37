@@ -27,6 +27,31 @@ defaults:
         - MirandaJanell
   -
     scope:
+      path: "getting-geeky"
+      type: "pages"
+    values:
+      ogimage:  http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
+  -
+    scope:
+      path: "suds-sunday"
+      type: "posts"
+    values:
+      layout:   suds-sunday
+      category: suds-sunday
+      ogimage:  http://media.take37.com/suds-sunday/SudsSunday-1400x1400.png
+      tags:
+        - suds-sunday
+        - podcast
+        - ThatFrakkingCat
+        - MirandaJanell
+  -
+    scope:
+      path: "suds-sunday"
+      type: "pages"
+    values:
+      ogimage:  http://media.take37.com/suds-sunday/SudsSunday-1400x1400.png
+  -
+    scope:
       path: "getting-geeky-gabnet"
       type: "posts"
     values:
