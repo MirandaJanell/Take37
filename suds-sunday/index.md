@@ -10,6 +10,8 @@ Suds Sunday
 
 ### Episodes
 
+#### Coming Soon
+
 <ul>
 {% for post in site.categories.suds-sunday %}
 	<li>
