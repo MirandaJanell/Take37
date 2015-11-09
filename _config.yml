@@ -13,62 +13,93 @@ gems:
 - jekyll-sitemap
 - jekyll-redirect-from
 defaults:
-  -
-    scope:
-      path: "getting-geeky"
-      type: "posts"
-    values:
-      layout:   getting-geeky
-      category: getting-geeky
-      ogimage:  http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
-      tags:
-        - getting-geeky
-        - podcast
-        - MirandaJanell
-  -
-    scope:
-      path: "getting-geeky"
-      type: "pages"
-    values:
-      ogimage:  http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
-  -
-    scope:
-      path: "suds-sunday"
-      type: "posts"
-    values:
-      layout:   suds-sunday
-      category: suds-sunday
-      ogimage:  http://media.take37.com/suds-sunday/SudsSunday-1400x1400.png
-      tags:
-        - suds-sunday
-        - podcast
-        - ThatFrakkingCat
-        - MirandaJanell
-  -
-    scope:
-      path: "suds-sunday"
-      type: "pages"
-    values:
-      ogimage:  http://media.take37.com/suds-sunday/SudsSunday-1400x1400.png
-  -
-    scope:
-      path: "getting-geeky-gabnet"
-      type: "posts"
-    values:
-      layout:   getting-geeky-gabnet
-      category: getting-geeky-gabnet
-      tags:
-        - archive
-  -
-    scope:
-      path: "wtf-dave"
-      type: "posts"
-    values:
-      layout:   comic
-      category: wtf-dave
-      comicname: "WTF Dave!?!"
-      tags:
-        - WTF-Dave
-        - Dave
-        - Comic
-        - Original
+-
+  scope:
+    path: "mmk"
+    type: "posts"
+  values:
+    layout:    mmk
+    category:  mmk
+    ogimage:   http://media.take37.com/mmk/mmk-cover-art.jpg
+    feedurl:   http://www.midnightmovieknights.com/mmk.xml
+    feedtitle: Midnight Movie Knights
+    tags:
+      - mmk
+      - podcast
+      - MirandaJanell
+      - ThatFrakkingCat
+-
+  scope:
+    path: "mmk"
+    type: "pages"
+  values:
+    ogimage:   http://media.take37.com/mmk/mmk-cover-art.jpg
+    feedurl:   http://www.midnightmovieknights.com/mmk.xml
+    feedtitle: Midnight Movie Knights
+-
+  scope:
+    path: "getting-geeky"
+    type: "posts"
+  values:
+    layout:    getting-geeky
+    category:  getting-geeky
+    ogimage:   http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
+    feedurl:   http://www.take37.com/getting-geeky/getting-geeky.xml
+    feedtitle: Getting Geeky
+    tags:
+      - getting-geeky
+      - podcast
+      - MirandaJanell
+-
+  scope:
+    path: "getting-geeky"
+    type: "pages"
+  values:
+    ogimage:   http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
+    feedurl:   http://www.take37.com/getting-geeky/getting-geeky.xml
+    feedtitle: Getting Geeky
+-
+  scope:
+    path: "suds-sunday"
+    type: "posts"
+  values:
+    layout:    suds-sunday
+    category:  suds-sunday
+    ogimage:   http://media.take37.com/suds-sunday/SudsSunday-1400x1400.png
+    feedurl:   http://www.take37.com/suds-sunday/suds-sunday.xml
+    feedtitle: Suds Sunday
+    tags:
+      - suds-sunday
+      - podcast
+      - ThatFrakkingCat
+      - MirandaJanell
+-
+  scope:
+    path: "suds-sunday"
+    type: "pages"
+  values:
+    ogimage:   http://media.take37.com/suds-sunday/SudsSunday-1400x1400.png
+    feedurl:   http://www.take37.com/suds-sunday/suds-sunday.xml
+    feedtitle: Suds Sunday
+-
+  scope:
+    path: "getting-geeky-gabnet"
+    type: "posts"
+  values:
+    layout:   getting-geeky-gabnet
+    category: getting-geeky-gabnet
+    tags:
+      - archive
+-
+  scope:
+    path: "wtf-dave"
+    type: "posts"
+  values:
+    layout:   comic
+    category: wtf-dave
+    comicname: "WTF Dave!?!"
+    tags:
+      - WTF-Dave
+      - Dave
+      - Comic
+      - Original

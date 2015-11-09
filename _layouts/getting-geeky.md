@@ -1,10 +1,7 @@
 ---
 layout:      default
-feedurl:     "/getting-geeky/getting-geeky.xml"
-feedtitle:   Getting Geeky
 twitteracct: "@GettingGeekyMJ"
 fbpage:      GettingGeeky
-ogimage:     http://media.take37.com/getting-geeky/GettingGeeky-1400x1400-Cropped.png
 ---
 {% capture pagetitle %}{{ page.date | date: "%B %d, %Y" }}{% endcapture %}
 {% assign episodeurl = page.link | replace: 'http://', 'http://www.podtrac.com/pts/redirect.m4a/' %}
