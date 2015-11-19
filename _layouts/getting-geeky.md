@@ -47,7 +47,7 @@ tags:
 		<div class="post-content">{{ content }}</div>
 
 		<p class="post-links">
-			<span><i class="fa fa-calendar"></i>&nbsp;{{ page.date | date: "%B %-d, %Y" }}</span> | <span><a href="{{ episodeurl }}"><i class="fa fa-cloud-download"></i>&nbsp;Download</a></span>
+			<span><i class="fa fa-calendar"></i>&nbsp;{{ page.date | date: "%B %-d, %Y" }}</span> | <span><a href="{{ episodeurl }}"><i class="fa fa-cloud-download"></i>&nbsp;Download</a></span> | <span><a href="{{ site.baseurl }}/getting-geeky/getting-geeky.xml"><i class="fa fa-rss"></i>&nbsp;Subscribe</a></span>
 		</p>
 		</div>
 	</div>
