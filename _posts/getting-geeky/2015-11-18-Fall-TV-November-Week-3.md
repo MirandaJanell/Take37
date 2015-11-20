@@ -15,7 +15,7 @@ tags:
 - Supergirl
 - Flash
 ---
-Miranda shares her thoughts on this weeks episodes of [Once Upon a Time](http://www.imdb.com/title/tt1843230/), [Gotham](http://www.imdb.com/title/tt3749900/), [Supergirl](http://www.imdb.com/title/tt4016454/) and [The Flash](http://www.imdb.com/title/tt3107288/). Oh and, "spoilers sweetie!"
+Miranda shares her thoughts on this weeks episodes of [Once Upon a Time](http://www.imdb.com/title/tt1843230/), [Gotham](http://www.imdb.com/title/tt3749900/), [Supergirl](http://www.imdb.com/title/tt4016454/) and [The Flash](http://www.imdb.com/title/tt3107288/). Oh and, "spoilers sweetie!"  
 
 * [Once Upon a Time](http://www.imdb.com/title/tt1843230/)
   * [Season 5, Episode 8 - Birth](http://www.imdb.com/title/tt4799998/)
