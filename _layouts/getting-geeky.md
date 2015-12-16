@@ -10,7 +10,7 @@ tags:
 - podcast
 - MirandaJanell
 ---
-{% capture pagetitle %}{{ page.date | date: "%B %d, %Y" }}{% endcapture %}
+{% capture pagetitle %}{% endcapture %}
 {% assign episodeurl = page.link | replace: 'http://', 'http://www.podtrac.com/pts/redirect.m4a/' %}
 
 <div class="row">
@@ -20,9 +20,9 @@ tags:
 
 	<div class="col-md-8 col-md-pull-4">
 		<div class="post-container">
-			<h1>Getting Geeky</h1>
-			{% if pagetitle %}<h2 class="post-title">{{ pagetitle }}</h2>{% endif %}
-			{% if page.subtitle %}<h3 class="post-title">{{ page.subtitle }}</h3>{% endif %}
+			<h1>Getting Geeky <small>- {{ page.date | date: "%B %d, %Y" }}</small></h1>
+			{% if page.title %}<h2 class="post-title">{{ page.title }}</h2>{% endif %}
+			{% if page.subtitle %}<h2 class="post-title"><small>{{ page.subtitle }}</small></h2>{% endif %}
 
 		{% if page.soundcloud %}
 		<div>

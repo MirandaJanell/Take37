@@ -8,3 +8,8 @@
 h1:first-child {
 	margin-top: 0px;
 }
+h2.post-title+h2.post-title {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	line-height: 45%;
+}
