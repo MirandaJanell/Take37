@@ -1,3 +1,21 @@
+@media screen and (min-width: 768px) {
+	html, body {
+		height: 100%;
+	}
+	.wrapper {
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin: 0 auto -3.5em;
+		padding-bottom: 1em;
+	}
+	footer, .push {
+		height: 3.5em;
+	}
+	footer .container {
+		padding-top: 1em;
+	}
+}
 .navbar-brand {
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -12,4 +30,17 @@ h2.post-title+h2.post-title {
 	margin-top: 0px;
 	margin-bottom: 20px;
 	line-height: 45%;
+}
+footer {
+	color: #373737;
+}
+@media screen and (min-width: 768px) {
+	.license-container {
+		float: right;
+	}
+}
+@media screen and (max-width: 767px) {
+	footer {
+		margin-bottom: 10px;
+	}
 }

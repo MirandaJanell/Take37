@@ -109,15 +109,30 @@
 	</head>
 
 	<body id="top">
-	{% if page.navinclude %}
-		{% include {{ page.navinclude }} %}
-	{% else %}
-		{% include nav.html %}
-	{% endif %}
+		<div class="wrapper">
+		{% if page.navinclude %}
+			{% include {{ page.navinclude }} %}
+		{% else %}
+			{% include nav.html %}
+		{% endif %}
 
-		<div class="container site-content">
-			{{ content }}
-		</div>
+			<div class="container site-content">
+				{{ content }}
+			</div><!-- .container.site-content -->
+			<div class="push"></div>
+		</div><!-- .wrapper -->
+		<footer>
+			<div class="container site-content clearfix">
+				<span>Take37 by <a href="https://twitter.com/ThatFrakkingCat">@ThatFrakkingCat</a> and <a href="https://twitter.com/MirandaJanell">@MirandaJanell</a></span>
+				<div class="license-container">
+				{% if page.licenseinclude %}
+					{% include {{ page.licenseinclude }} %}
+				{% else %}
+					<a class="license-link" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+				{% endif %}
+				</div>
+			</div>
+		</footer>
 
 		<!-- SCRIPTS -->
 		<!-- jQuery first -->
