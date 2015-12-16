@@ -14,13 +14,13 @@ tags:
 {% assign episodeurl = page.link | replace: 'http://', 'http://www.podtrac.com/pts/redirect.m4a/' %}
 
 <div class="row">
-	<div class="col-md-4 col-md-push-8">
+	<div class="col-sm-4 col-sm-push-8">
 		<img src="http://media.take37.com/getting-geeky/GettingGeeky-360x360.png" width="360" height="360" class="img-responsive" alt="Getting Geeky Cover Art" />
 	</div>
 
-	<div class="col-md-8 col-md-pull-4">
+	<div class="col-sm-8 col-sm-pull-4">
 		<div class="post-container">
-			<h1>Getting Geeky <small>- {{ page.date | date: "%B %d, %Y" }}</small></h1>
+			<h1>Getting Geeky</h1>
 			{% if page.title %}<h2 class="post-title">{{ page.title }}</h2>{% endif %}
 			{% if page.subtitle %}<h2 class="post-title"><small>{{ page.subtitle }}</small></h2>{% endif %}
 
